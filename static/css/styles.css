@@ -1,0 +1,60 @@
+/* Estilos base de la tienda */
+:root {
+    --ink: #17202a;
+    --accent: #e4572e;
+    --paper: #fffaf2;
+    --line: #eadfce;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: Georgia, 'Times New Roman', serif;
+}
+
+.site-header {
+    display: flex;
+    align-items: center;
+    min-height: 82px;
+    padding: 16px 7%;
+    border-bottom: 1px solid var(--line);
+    background: #ffffff;
+}
+
+.brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--ink);
+    font-size: 1.35rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.brand img {
+    width: 44px;
+    height: 44px;
+}
+
+.container {
+    width: min(1100px, 86%);
+    min-height: 65vh;
+    margin: 0 auto;
+    padding: 48px 0;
+}
+
+.site-footer {
+    padding: 24px 7%;
+    border-top: 1px solid var(--line);
+    color: #6b6258;
+    text-align: center;
+}
+
+.site-footer p {
+    margin: 0;
+}

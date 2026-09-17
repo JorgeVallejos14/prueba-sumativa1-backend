@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title>Logo de Tienda Gamer</title>
+  <rect width="64" height="64" rx="14" fill="#e4572e"/>
+  <path d="M18 27h28l4 20H14l4-20Z" fill="#fffaf2"/>
+  <path d="M24 27v-4a8 8 0 0 1 16 0v4M24 37h-5m2.5-2.5v5M40 36h.1m5 3h.1" fill="none" stroke="#17202a" stroke-linecap="round" stroke-width="3"/>
+</svg>

@@ -1,24 +1,4 @@
-# Entorno virtual
 venv/
-.venv/
-
-# Archivos de Python
 __pycache__/
-*.py[cod]
-
-# Variables y secretos
-.env
-
-# Base de datos local
+*.pyc
 db.sqlite3
-
-# Archivos generados por Django
-staticfiles/
-media/
-
-# Configuración del editor
-.vscode/
-.idea/
-
-# Logs
-*.log

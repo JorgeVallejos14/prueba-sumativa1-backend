@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block titulo %}{{ juego.titulo }} | Tienda Gamer{% endblock %}
+
+{% block contenido %}
+	<article>
+		<h1>{{ juego.titulo }}</h1>
+		<p>{{ juego.descripcion|truncatewords:30 }}</p>
+		<dl>
+			<dt>Plataforma</dt>
+			<dd>{{ juego.plataforma }}</dd>
+			<dt>Duración</dt>
+			<dd>{{ juego.horas }} horas</dd>
+			<dt>Multijugador</dt>
+			<dd>{% if juego.multijugador %}Sí{% else %}No{% endif %}</dd>
+			<dt>Precio original</dt>
+			<dd>${{ juego.precio|floatformat:0 }}</dd>
+			<dt>Precio con descuento</dt>
+			<dd>${{ juego.precio_descuento|floatformat:0 }}</dd>
+		</dl>
+		<p><strong>{{ juego.etiqueta }}</strong></p>
+		<a href="{% url 'tienda:inicio' %}">Volver a la portada</a>
+	</article>
+{% endblock %}

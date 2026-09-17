@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block titulo %}Portada | Tienda Gamer{% endblock %}
+
+{% block contenido %}
+	<h1>Catálogo de juegos</h1>
+	<p>{{ total }} juegos disponibles.</p>
+
+	<section aria-label="Resumen del catálogo">
+		<p>Precio promedio: ${{ precio_promedio|floatformat:0 }}</p>
+		<p>Juegos en oferta: {{ cantidad_en_oferta }}</p>
+	</section>
+
+	<section aria-label="Lista de juegos">
+		{% for p in juegos %}
+			<article>
+				<h2><a href="{% url 'tienda:detalle' p.id %}">{{ p.titulo }}</a></h2>
+				<p>{{ p.descripcion|truncatewords:15 }}</p>
+				<p>Plataforma: {{ p.plataforma }}</p>
+				<p>Precio: ${{ p.precio|floatformat:0 }}</p>
+				{% if p.oferta %}
+					<strong>En oferta</strong>
+				{% endif %}
+			</article>
+		{% empty %}
+			<p>No hay juegos disponibles.</p>
+		{% endfor %}
+	</section>
+{% endblock %}
