@@ -1,0 +1,1 @@
+Se uso IA para la creación de los esqueletos HTML y la revision que se le hizo es si todo encuajaba como se pedia y pues el problema era que no pescaba el styles y tuve que arreglarlo.
